@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello cornbox world</title>
+    
+    <script href="jquery.js"></script>
+	<script href="html5shiv.js"></script>
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="font.css">
+	<link rel="stylesheet" href="style.css">
+	
+	<style>
+          .con {width: 100%; height: 100%;}
+        .snb {width: 350px; height: 100%; position: fixed; top: 0; left: 0; background-image: url("./img/fix/sidebar.png"); background-size: cover; float: left;z-index: 6; box-shadow: 5px 5px 5px rgba(23, 21, 14, 0.5)}
+        .logo {width: 350px; height: auto; }
+        .logo img {display: block; width: 200px; height: auto;margin: 0 auto;padding-top: 30px;}
+        .snbbox {width: 350px;}
+        .snblst {width: 350px;text-align: center; padding-top: 55px;}
+        .snblst label {display: block;width: 15px; height: 15px; margin: 0 auto; }
+        .snblst label {background-image: url("./img/fix/plus-02.svg"); background-size: cover;}
+        .slnbbox {display: none; margin-top: 15px;}
+        #lb1:checked ~ .slnbbox{display: block;}
+        #lb1:checked ~ label {background-image: url("./img/fix/up-02.svg")}
+        #lb2:checked ~ .slnbbox{display: block; }
+        #lb2:checked ~ label {background-image: url("./img/fix/up-02.svg")}
+        #lb3:checked ~ .slnbbox{display: block;}
+        #lb3:checked ~ label {background-image: url("./img/fix/up-02.svg")}
+        #lb4:checked ~ .slnbbox{display: block;}
+        #lb4:checked ~ label {background-image: url("./img/fix/up-02.svg")}
+        
+    
+         
+        .poss {position: absolute; bottom: 10px; opacity: 0.6; text-align: center;left: 65px;}
+
+.
+        
+    
+    </style>
+    <link rel="stylesheet" href="st.css">
+</head>
+
+<body>
+ 
+    <div class="con">
+       <!--  aside.snb>(div.logo>img)+(ul.snbbox>(li.snblst.fontatc>ul.slnbbox>(li>a.fontatc)*5)*4) -->
+      <aside class="snb">
+          <div class="logo"><a href="index.html"><img src="./img/logow.svg" alt="로고 이미지"></a></div>
+          <ul class="snbbox">
+              <li class="snblst fontatc ftcw"><a class="fontatc ftcw" href="index.html#page2">
+                 영화정보 보기</a><br/>
+                 <input type="radio" name="lb" id="lb1" class="ck"><label for="lb1"></label>
+                  <ul class="slnbbox">
+                      <li><a href="" class="fontatc ftcw">현재상영작</a></li>
+                      <li><a href="" class="fontatc ftcw">상영예정작</a></li>
+                      <li><a href="" class="fontatc ftcw">이전상영작</a></li>
+                  </ul>
+              </li>
+              <li class="snblst fontatc ftcw"><a class="fontatc ftcw" href="index.html#page3">
+                 COMPANY</a><br/>
+                 <input type="radio" name="lb" id="lb2" class="ck"><label for="lb2"></label>
+                  <ul class="slnbbox">
+                      <li><a href="" class="fontatc ftcw">회사소개</a></li>
+                      <li><a href="" class="fontatc ftcw">쇼박스소개</a></li>
+                      <li><a href="" class="fontatc ftcw">사업영역</a></li>
+                      <li><a href="" class="fontatc ftcw">회사연혁</a></li>
+                      <li><a href="" class="fontatc ftcw">오시는길</a></li>
+                  </ul>
+              </li>
+              <li class="snblst fontatc ftcw"><a class="fontatc ftcw"href="index.html#page4">
+                 INVESTOR RELATIONS</a><br/>
+                 <input type="radio" name="lb" id="lb3" class="ck"><label for="lb3"></label>
+                  <ul class="slnbbox">
+                      <li><a href="" class="fontatc ftcw">공시정보</a></li>
+                      <li><a href="" class="fontatc ftcw">요약재무정보</a></li>
+                      <li><a href="" class="fontatc ftcw">IR NEWS</a></li>
+                  </ul>
+              </li>
+              <li class="snblst fontatc ftcw"><a class="fontatc ftcw"href="index.html#page4">
+                 공지사항</a><br/>
+                 <input type="radio" name="lb" id="lb4" class="ck"><label for="lb4"></label>
+                  <ul class="slnbbox">
+                      <li><a href="" class="fontatc ftcw">공지사항</a></li>
+                  </ul>
+              </li>
+          </ul>
+          <p class="fontcom ftcw poss">copyright @ all right reverse <br/> by kimyatongue, showbox.co.kr</p>
+      </aside> <!-- sidebar 끝 -->
+       
+       <div class="pagewrap">
+                          <input type="radio" name="rdo1" id="rdo1" class="ck" checked>
+                 <input type="radio" name="rdo1" id="rdo2" class="ck">
+                   <input type="radio" name="rdo1" id="rdo3" class="ck">
+           <div id="page1" class="page">
+
+               <div class="imgbox">
+                   <img src="./img/fix/main1_1.png" alt="첫번째 메인 이미지">
+                   <div class="infobox ">
+                       <h4 class="fontatc ftcw">CURRENT BOX-OFFICE</h4>
+                       <h1 class="fonttitle ftcw">꾼 (The Swindlers, 2017)</h1>
+                       <div class="btn1 infobtn1">
+                              <a href="">
+                               <span class="fontcom ftcw">상영관 확인하기</span>
+                               <span class="blBox"></span>
+                           </a>
+                        </div>
+                       <div class="btn1 infobtn2"><a href="">
+                               <span class="fontcom ftcw">영화 상세페이지</span>
+                               <span class="blBox"></span>
+                           </a></div>
+                           <label for="" class="rdoleft">&lt;</label>
+                           <label for="rdo2" class="rdoright">&gt;</label>
+                    </div>
+               </div>
+               <div class="imgbox">
+                   <img src="./img/fix/main1_2.png" alt="">
+                   <div class="infobox">
+                       <h4 class="fontatc ftcw">CURRENT BOX-OFFICE</h4>
+                       <h1 class="fonttitle ftcw">살인자의 기억법 (MEMOIR OF A MURDERER, 2016)</h1>
+                       <div class="btn1 infobtn1"><a href="">
+                               <span class="fontcom ftcw">상영관 확인하기</span>
+                               <span class="blBox"></span>
+                           </a></div>
+                       <div class="btn1 infobtn2"><a href="">
+                               <span class="fontcom ftcw">영화 상세페이지</span>
+                               <span class="blBox"></span>
+                           </a>
+                        </div>
+                           <label for="rdo1" class="rdoleft">&lt;</label>
+                           <label for="rdo3" class="rdoright">&gt;</label>
+                    </div>
+               </div>
+               <div class="imgbox">
+                   <img src="./img/fix/main1_3.png" alt="">
+                   <div class="infobox">
+                       <h4 class="fontatc ftcw">CURRENT BOX-OFFICE</h4>
+                       <h1 class="fonttitle ftcw">택시운전사 (A Taxi Driver, 2017)</h1>
+                       <div class="btn1 infobtn1"><a href="">
+                               <span class="fontcom ftcw">상영관 확인하기</span>
+                               <span class="blBox"></span>
+                           </a></div>
+                       <div class="btn1 infobtn2"><a href="">
+                               <span class="fontcom ftcw">영화 상세페이지</span>
+                               <span class="blBox"></span>
+                           </a></div>
+                           <label for="rdo2" class="rdoleft">&lt;</label>
+                           <label for="#" class="rdoright">&gt;</label>
+                     </div>
+               </div>
+               
+           </div> <!-- #page1 끝 -->
+           <div id="page2" class="page">
+               <h1 class="fonttitle">현재상영작</h1>
+               <div class="conbox">
+                   <ul>
+
+                        <li class="conlst conlst1">
+                           <p class="fontheader">현재 상영작</p>
+                        </li>
+                       <li class="conlst conlst2">
+                           <p class="fontatc">꾼 (The Swindlers, 2017)</p>
+                           <ul class="sublst">
+                                   <li class="conlst conlst5">
+                               
+                               <div class="imgbox1 imgb1"><img src="./img/fix/main2_1.png" alt="">
+                               <div class="btn1 mvbtn1"><a href="">
+                                   <span class="fontcom ftcw">상영관 확인하기</span>
+                                   <span class="blBox"></span>
+                               </a></div>
+                               <div class="btn1 mvbtn2 ftcw"><a href="">
+                                   <span class="fontcom ftcw">영화 상세페이지</span>
+                                   <span class="blBox"></span>
+                               </a></div>
+                               </div>
+                               </li>
+                           </ul>
+                       </li>
+                       <li class="conlst conlst3">
+                           <p class="fontatc">살인자의 기억법 (MEMOIR OF A MURDERER, 2016)</p>
+                           <ul class="sublst">
+                                   <li class="conlst conlst5">
+                               
+                               <div class="imgbox1 imgb2"><img src="./img/fix/main2_2.png" alt="">
+                               <div class="btn1 mvbtn1"><a href="">
+                                   <span class="fontcom ftcw">상영관 확인하기</span>
+                                   <span class="blBox"></span>
+                               </a></div>
+                               <div class="btn1 mvbtn2 ftcw"><a href="">
+                                   <span class="fontcom ftcw">영화 상세페이지</span>
+                                   <span class="blBox"></span>
+                               </a></div>
+                               </div>
+                               </li>
+                           </ul>
+                       </li>
+                       <li class="conlst conlst4">
+                           <p class="fontatc">택시운전사 (A Taxi Driver, 2017)</p>
+                           <ul class="sublst">
+                                   <li class="conlst conlst5">
+                               
+                               <div class="imgbox1 imgb3"><img src="./img/fix/main2_3.png" alt="">
+                               <div class="btn1 mvbtn1"><a href="">
+                                   <span class="fontcom ftcw">상영관 확인하기</span>
+                                   <span class="blBox"></span>
+                               </a></div>
+                               <div class="btn1 mvbtn2"><a href="">
+                                   <span class="fontcom ftcw">영화 상세페이지</span>
+                                   <span class="blBox"></span>
+                               </a></div>
+                               </div>
+                               </li>
+                           </ul>
+                       </li>
+                       
+                       
+                   </ul>
+               </div>
+           </div> <!-- #page2 끝 -->
+           
+           <div id="page3" class="page">
+               <h1 class="fonttitle">회사소개</h1>
+               <div class="conbox">
+                   <ul>
+                       <li class="conlst conlst1 fl">
+                           <p class="fontheader">회사소개</p>
+                       </li>
+                       <li class="conlst conlst2 fl">
+                           <p class="fontatc">회사소개</p>
+                           <ul class="sublst sublst2">
+                                   <li class="conlst conlst5">
+                               
+                               <div class="imgbox1 imgb2"><img src="./img/fix/main3_1.png" alt="">
+                               <div class="btn1 mvbtn3"><a href="">
+                                   <span class="fontcom">회사소개 바로가기</span>
+                                   <span class="blBox"></span>
+                               </a></div>
+
+                               </div>
+                               </li>
+                           </ul>
+                       </li>
+                       <li class="conlst conlst3 fl">
+                           <p class="fontatc">사업영역</p>
+                           <ul class="sublst sublst2">
+                                   <li class="conlst conlst5">
+                               
+                               <div class="imgbox1 imgb2"><img src="./img/fix/main3_2.svg" alt="">
+                               <div class="btn1 mvbtn3"><a href="">
+                                   <span class="fontcom">사업영역 바로가기</span>
+                                   <span class="blBox"></span>
+                               </a></div>
+
+                               </div>
+                               </li>
+                           </ul>
+                       </li>
+                       <li class="conlst conlst4 fl">
+                           <p class="fontatc">회사연혁</p>
+                           <ul class="sublst sublst2">
+                                   <li class="conlst conlst5">
+                               
+                               <div class="imgbox1 imgb2"><img src="./img/fix/main3_3.svg" alt="">
+                               <div class="btn1 mvbtn3"><a href="">
+                                   <span class="fontcom">회사연혁 바로가기</span>
+                                   <span class="blBox"></span>
+                               </a></div>
+                              
+                               </div>
+                               </li>
+                           </ul>
+                       </li>
+                      
+                   </ul>
+               </div>
+           </div><!-- #page3 끝 -->
+           
+           <div id="page4" class="page">
+            <h1 class="fonttitle">INVERTOR RELATIONS</h1>
+             <img class="pg4img" src="./img/fix/main4.svg" alt="">
+              <div class="btn1 pg4btn pg4btn1"><a href="">
+                  <span class="fontcom">공시정보</span>
+                  <span class="blBox"></span></a>
+              </div>
+              <div class="btn1 pg4btn pg4btn2"><a href="">
+                  <span class="fontcom">요약 재무정보</span>
+                  <span class="blBox"></span>
+                  </a>
+              </div>
+              <div class="btn1 pg4btn pg4btn3"><a href="">
+                  <span class="fontcom">ir 뉴스</span>
+                  <span class="blBox"></span>
+                  </a>
+              </div>
+               
+           </div><!-- #page4 끝 -->
+        <footer class="ft">
+            <p class="fontcom">본 사이트는 학생의 개인적 용도를 위해서 제작 되었으며, 사용된 이미지와 텍스트 등 구성요소를 사용하시거나, 복사하실 경우 showbox.cp.kr 혹은 주식회사 쇼박스 동의를 요합니다.<br/> 무단 복사, 전제 상업적 이용시 법적 처벌을 받으실수 있습니다.
+
+<br/>Copyright by KIM YA HYEO. @ All right reversed
+</p>
+        </footer>
+       </div>
+        
+        
+    </div><!-- con 끝 -->
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+.hd {width: 100%; height: 100px; background-color: rgba(214, 212, 212, 0.7); }
+.hd::after {content: '';display: block; width: 100%; height: 2px; background-color: rgba(12, 25, 15, 0.7); }
+.logo {width: 200px; height: 100px; float: left;}
+.logo img {display: block; width: 120px; height:auto ;  margin: 0 auto;padding-top: 25px;}
+.hdwrap {width: 960px; height: 100px; margin: 0 auto; position: relative;}
+.gnb {width: 960px; height: 100px;}
+.gnblst {width: 25%; height: 100%; float: left;text-align: center;}
+.gnblst a {line-height: 100px; }
+.gnblst .lnbbox a { line-height: 50px; }
+.searchbox {width: 330px; height: 100px; float: right; margin-top: -70px; }
+.schbox {outline: 0; border:0;  width: 0px; height: 50px; text-indent: 10px; font-weight: 900; font-size: 1.5em; transition: 1s; float: right;}
+.searchbox img {width: 25px; height: 25px; float: right; margin-top: 10px; margin-right: 20px;margin-left: 10px;}
+.searchbox:hover .schbox {width: 250px;}
+.lnbbox li {padding:10px; }
+.lnbbox { display:none; box-shadow: 1px 1px 3px rgba(23, 21,15, 0.6); border-bottom-left-radius:15px; border-bottom-right-radius:15px}
+.gnblst:hover .lnbbox {display: block;}
+.sitemap {position: fixed; width: 30px; height: 150px; top: 50%; left: 0;}
+.sitemap label {writing-mode: tb-rl;}
+.smcls {display: none;z-index: 9999;}
+.stmbox {position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(223, 221, 211, 0.9); z-index:-999; text-align: center;opacity: 0; transition: 1s; }
+.stmnav {padding-top: 200px;}
+.stmnav a {line-height: 3.5;}
+#stm:checked ~ .stmbox {opacity: 1; z-index: 999;}
+#stm:checked ~ .sitemap > .smop {display: none;}
+#stm:checked ~ .sitemap > .smcls {display: block; z-index: 9999;}
+

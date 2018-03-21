@@ -1,0 +1,18 @@
+/* 공통 스타일 정의서 */
+
+/* 폰트 스타일 정의서 */
+.fonttitle {font-size:48px; line-height: 1.5; color: black;  font-family: 'Jeju Gothic', serif;}
+.fontheader {font-size:30px; line-height: 1.5; color:black;font-family: 'Jeju Gothic', serif;}
+.fontatc {font-size: 18px; line-height: 1.5; color:black;font-family: 'Jeju Gothic', serif;}
+.fontcom {font-size:14px; line-height: 1.5; color:black;font-family: 'Nanum Gothic', serif;}
+.ftcw {color:#dfdfdf;}
+
+/* 버튼 스타일 정의 */
+.btn1 {width: 250px; height: 75px; box-sizing: border-box; border: 1px solid rgba(255, 255, 255, 0.8); position:relative; 
+overflow:hidden; }
+/*.btn1::after {content: '';display: block; opacity: 0;  width: 100%; height: 100%; background-color: #b0e5ff;transition: 1s;margin-bottom: 0px ;}*/
+.btn1 span { display:block; line-height:75px; text-align: center; }
+.blBox { display: block; opacity: 0.5;  width: 250px; height: 75px; background-color: #b0e5ff;transition: 1s;bottom: -75px ; z-index: 10; position: absolute; }
+.btn1:hover .blBox { bottom: 0; }
+
+

@@ -1,0 +1,65 @@
+.pagewrap {width: 1570px; height: 100%; float: right;overflow-x: hidden}
+.page {width: 100%; height: 100%; background-image: url("./img/fix/ba.png"); background-size: cover; }
+
+#page1 {width: 400%; height: 100%; overflow: hidden; transition: 1s;}
+.imgbox {width: 25%; height: 100%; float: left;position: relative;}
+.imgbox img {display: block; width: 100%; height: auto; }
+.infobox {position: absolute; width: 100%; height: 100%;top: 0; left: 0; }
+.infobox h4, .infobox h1 {text-align: center;}
+.infobox h4 {padding-top: 400px}
+.infobox h4::after {content: ''; display: block; width: 150px; height: 2px; background-color: #dfdfdf; margin: 0 auto; margin-top: 20px;}
+.infobox h1 {padding-top:50px}
+.infobtn1 {float: left; margin-left: 480px; margin-top: 135px;}
+.infobtn1 p {text-align: center; line-height: 75px;}
+.infobtn2 {float: right; margin-right: 480px; margin-top: 135px;}
+.infobtn2 p {text-align: center; line-height: 75px;}
+.rdoleft {float: left; font-size: 12em; color: rgba(255, 255, 255, 0.2); position: absolute; top: 40%; left: 3%;}
+.rdoright {float: right; font-size: 12em; color: rgba(255, 255, 255, 0.2); position: absolute; top: 40%; right: 3%;}
+
+#rdo1:checked ~ #page1 {margin-left: 0; transition-delay: 0.3s;}
+#rdo2:checked ~ #page1 {margin-left: -100%; transition-delay: 0.3s;}
+#rdo3:checked ~ #page1 {margin-left: -200%; transition-delay: 0.3s;}
+
+#page2 > .fonttitle {padding-top: 98px; text-align: center;}
+#page2 > .fonttitle::after {content: ''; display: block; width: 150px; height: 2px; background-color: #dfdfdf; margin: 0 auto; margin-top: 20px;}
+#page3 > .fonttitle {padding-top: 98px; text-align: center;}
+#page3 > .fonttitle::after {content: ''; display: block; width: 150px; height: 2px; background-color: #dfdfdf; margin: 0 auto; margin-top: 20px;}
+#page4 > .fonttitle {padding-top: 98px; text-align: center;}
+#page4 > .fonttitle::after {content: ''; display: block; width: 150px; height: 2px; background-color: #dfdfdf; margin: 0 auto; margin-top: 20px;}
+.conbox {width: 100%; height: 540px; margin-top: 100px;position: relative;}
+
+.conlst1, .conlst2, .conlst3, .conlst4 {width: 375px; height: 135px; float: right; text-indent: 5px; line-height: 135px;clear: both;}
+
+.conlst p {padding-top: 55px; text-align: center;}
+.conlst1 p {padding: 0;line-height: 135px; text-align: center;}
+.conlst1::before {content: ''; display: block; width: 375px;height: 2px; background-color:#dfdfdf;  }
+.conlst1::after {content: ''; display: block; width: 375px;height: 2px; background-color:#dfdfdf;  }
+.conlst4 {border-bottom: 2px solid #dfdfdf; }
+.sublst {width: 1178px; height: 540px; float: right; position: absolute; top: 0; left: 0;}
+.conlst5 {width: 100%; height: 100%; box-shadow: 7px 7px 7px rgba(23, 21, 23, 0.7) }
+.imgbox1 {width: 100%; height: 100%; position: relative; overflow: hidden;}
+.imgbox1 img {display: block; width: 100%; height: auto;}
+.mvbtn1, .mvbtn2, .mvbtn3 {position: absolute; bottom: 50px;}
+.mvbtn1 {left: 300px;}
+.mvbtn1 p {padding: 0; text-align: center; line-height: 75px; color:#dfdfdf;}
+.mvbtn2 {right: 300px;}
+.mvbtn2 p {padding: 0;text-align: center; line-height: 75px; color:#dfdfdf;}
+
+.fl {float: left}
+.mvbtn3 {left: 0; right: 0; margin-left: auto; margin-right: auto; border-color: black;}
+.mvbtn3 p {padding: 0;text-align: center; line-height: 75px; color:#dfdfdf;color:black}
+.sublst2 {left: auto;top: 0; right: 0;}
+
+
+.conlst:hover .sublst {display: block; z-index: 5;}
+
+
+#page4 {height: 600px; position: relative;} 
+.pg4img {display: block; width: 100%;height: auto; position: absolute;padding-top: 150px;}
+.pg4btn {position: absolute; bottom: 10px; border-color: black; z-index: 5;}
+.pg4btn1 {left: 350px;}
+.pg4btn2 {left: 0;right: 0; margin-left: auto; margin-right: auto;}
+.pg4btn3 {right: 350px;}
+.pg4btn p {padding: 0;text-align: center; line-height: 75px;}
+.ft {width: 100%; height: 75px; float:right; background-color: rgba(21,23,24, 0.8); padding-top: 110px; }
+.ft p {text-align: center;}
